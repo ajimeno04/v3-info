@@ -4,8 +4,8 @@ import gql from 'graphql-tag'
 import { useClients } from 'state/application/hooks'
 
 export const TOP_TOKENS = gql`
-  query topPools {
-    tokens(first: 50, orderBy: totalValueLockedUSD, orderDirection: desc, subgraphError: allow) {
+  query topTokens {
+    tokens {
       id
     }
   }
